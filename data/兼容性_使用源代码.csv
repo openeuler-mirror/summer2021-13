@@ -1,0 +1,20 @@
+﻿License,LGPL-2.1-only,LGPL-2.1-or-later,LGPL-3.0-only,GPL-2.0-only,GPL-2.0-or-later,GPL-3.0-only,AGPL-3.0-only,Artistic-2.0,CECILL-2.1,EPL-1.0,EPL-2.0,EUPL-1.1,EUPL-1.2,MPL-2.0,MS-RL,OSL-3.0,Vim
+LGPL-2.1-only,0,0,，组合遵循GPL-3.0-only,，并入的代码遵循GPL-2.0-only,，并入的代码遵循GPL-2.0-or-later,，并入的代码遵循GPL-3.0-only,0,，组合遵循LGPL-2.1-only,冲突,，并入的代码遵循LGPL-2.1-only,，并入的代码遵循LGPL-2.1-only,冲突,，并入的代码遵循LGPL-2.1-only,，并入的代码遵循LGPL-2.1-only,冲突,冲突,冲突
+LGPL-2.1-or-later,0,0,0,，并入的代码遵循GPL-2.0-only,，并入的代码遵循GPL-2.0-or-later,，并入的代码遵循GPL-3.0-only,0,，组合遵循LGPL-2.1-or-later,冲突,，并入的代码遵循LGPL-2.1-or-later,，并入的代码遵循LGPL-2.1-or-later,冲突,，并入的代码遵循LGPL-2.1-or-later,，并入的代码遵循LGPL-2.1-or-later,冲突,冲突,冲突
+LGPL-3.0-only,，组合遵循GPL-3.0-only,，组合遵循LGPL-3.0-only,0,冲突,，组合遵循GPL-3.0-only,0,0,，组合遵循LGPL-3.0-only,冲突,，并入的代码遵循LGPL-3.0-only,，并入的代码遵循LGPL-3.0-only,冲突,，并入的代码遵循LGPL-3.0-only,，并入的代码遵循LGPL-3.0-only,冲突,冲突,冲突
+GPL-2.0-only,，组合遵循GPL-2.0-only,，组合遵循GPL-2.0-only,冲突,0,0,冲突,冲突,，组合遵循GPL-2.0-only,，组合遵循GPL-2.0-only,冲突,冲突,，组合遵循GPL-2.0-only,，组合遵循GPL-2.0-only,，组合遵循GPL-2.0-only,冲突,冲突,，组合遵循GPL-2.0-only
+GPL-2.0-or-later,，组合遵循GPL-2.0-or -later,，组合遵循GPL-2.0-or -later,，组合遵循GPL-3.0-only,0,0,0,0,，组合遵循GPL-2.0-or -later,，组合遵循GPL-2.0-or -later,冲突,，组合遵循GPL-2.0-or -later,冲突,，组合遵循GPL-2.0-or -later,，组合遵循GPL-2.0-or -later,冲突,冲突,，组合遵循GPL-2.0-or -later
+GPL-3.0-only,，组合遵循GPL-3.0-only,，组合遵循GPL-3.0-only,，组合遵循GPL-3.0-only,冲突,，组合遵循GPL-3.0-only,0,0,，组合遵循GPL-3.0-only,，组合遵循GPL-3.0-only,冲突,，组合遵循GPL-3.0-only,冲突,，组合遵循GPL-3.0-only,，组合遵循GPL-3.0-only,冲突,冲突,，组合遵循GPL-3.0-only
+AGPL-3.0-only,，组合遵循AGPL-3.0-only,，组合遵循AGPL-3.0-only,，组合遵循AGPL-3.0-only,冲突,，组合遵循AGPL-3.0-only,，组合遵循AGPL-3.0-only,0,，组合遵循AGPL-3.0-only,，组合遵循AGPL-3.0-only,冲突,冲突,冲突,，组合遵循AGPL-3.0-only,，组合遵循AGPL-3.0-only,冲突,冲突,，组合遵循AGPL-3.0-only
+Artistic-2.0,，并入的代码遵循LGPL-2.1-only,，并入的代码遵循LGPL-2.1-or-later,，并入的代码遵循LGPL-3.0-only,，并入的代码遵循GPL-2.0-only,，并入的代码遵循GPL-2.0-or-later,，并入的代码遵循GPL-3.0-only,，并入的代码遵循AGPL-3.0-only,0,，并入的代码遵循CECILL-2.1,，并入的代码遵循EPL-1.0,，并入的代码遵循EPL-2.0,，并入的代码遵循EUPL-1.1,，并入的代码遵循EUPL-1.2,，并入的代码遵循MPL-2.0,，并入的代码遵循MS-RL,，并入的代码遵循OSL-3.0,，并入的代码遵循Vim
+CC-BY-SA-4.0,冲突,冲突,冲突,冲突,冲突,，并入的作品遵循GPL-3.0-only,冲突,冲突,冲突,冲突,冲突,冲突,冲突,冲突,冲突,冲突,冲突
+CECILL-2.1,冲突,冲突,冲突,，并入的代码遵循GPL-2.0-only,，并入的代码遵循GPL-2.0-or-later,，并入的代码遵循GPL-3.0-only,，并入的代码遵循AGPL-3.0-only,，组合遵循CECILL-2.1,0,冲突,冲突,，并入的代码遵循EUPL-1.1,，并入的代码遵循EUPL-1.2,冲突,冲突,冲突,冲突
+EPL-1.0,，并入的代码遵循EPL-1.0,，并入的代码遵循EPL-1.0,，并入的代码遵循EPL-1.0,冲突,冲突,冲突,冲突,，组合遵循EPL-1.0,冲突,0,0,，组合遵循EPL-1.0,，组合遵循EPL-1.0,冲突,冲突,冲突,冲突
+EPL-2.0,，并入的代码遵循EPL-2.0,，并入的代码遵循EPL-2.0,，并入的代码遵循EPL-2.0,冲突,，并入的代码遵循GPL-2.0-or-later,，并入的代码遵循GPL-3.0-only,冲突,，组合遵循EPL-2.0,冲突,0,0,冲突,冲突,冲突,冲突,冲突,冲突
+EUPL-1.1,冲突,冲突,冲突,，并入的代码遵循GPL-2.0-only,冲突,冲突,冲突,，组合遵循EUPL-1.1,，组合遵循EUPL-1.1,，并入的代码遵循EPL-1.0,冲突,0,，组合遵循EUPL-1.1,冲突,冲突,，并入的代码遵循OSL-3.0,冲突
+EUPL-1.2,，并入的代码遵循LGPL-2.1-only,，并入的代码遵循LGPL-2.1-or-later,，并入的代码遵循LGPL-3.0-only,，并入的代码遵循GPL-2.0-only,，并入的代码遵循GPL-2.0-or-later,，并入的代码遵循GPL-3.0-only,，并入的代码遵循AGPL-3.0-only,，组合遵循EUPL-1.2,，并入的代码遵循CECILL-2.1,，并入的代码遵循EPL-1.0,冲突,，并入的代码遵循EUPL-1.1,0,，并入的代码遵循MPL-2.0,冲突,，并入的代码遵循OSL-3.0,冲突
+MPL-2.0,，并入的代码遵循MPL-2.0,，并入的代码遵循MPL-2.0,，并入的代码遵循MPL-2.0,，并入的代码遵循MPL-2.0,，并入的代码遵循MPL-2.0,，并入的代码遵循MPL-2.0,，并入的代码遵循MPL-2.0,，组合遵循MPL-2.0,冲突,冲突,冲突,冲突,，并入的代码遵循MPL-2.0,0,冲突,冲突,冲突
+MS-RL,冲突,冲突,冲突,冲突,冲突,冲突,冲突,，组合遵循MS-RL,冲突,冲突,冲突,冲突,冲突,冲突,0,冲突,冲突
+ODbL-1.0,冲突,冲突,冲突,冲突,冲突,冲突,冲突,，组合遵循ODbL-1.0,冲突,冲突,冲突,冲突,冲突,冲突,冲突,冲突,冲突
+OSL-3.0,冲突,冲突,冲突,冲突,冲突,冲突,冲突,，组合遵循OSL-3.0,冲突,冲突,冲突,，组合遵循OSL-3.0,，组合遵循OSL-3.0,冲突,冲突,0,冲突
+Vim,冲突,冲突,冲突,，并入的代码遵循GPL-2.0-only,，并入的代码遵循GPL-2.0-or-later,，并入的代码遵循GPL-3.0-only,，并入的代码遵循AGPL-3.0-only,，组合遵循Vim,冲突,冲突,冲突,冲突,冲突,冲突,冲突,冲突,0
