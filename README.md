@@ -3,20 +3,18 @@
 #### Description
 https://gitee.com/openeuler-competition/summer-2021/issues/I3E2PG
 
+
 #### Software Architecture
-Software architecture description
+1. Pycharm
 
-#### Installation
+#### Plan
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1. 构建开源许可证条款分析矩阵，条款包括但不限于链接、子证书授予、商用、分发、修改、专利授权、私用、使用商标、承担责任、提供担保、公开源码、防止协议与版权信息、使用网络分发、使用相同协议、声明变更等。
+2. 定义冲突的概念以及产生冲突的条件，构建开源许可证冲突分析矩阵，给出不同许可证之间的兼容性关系。
+3. 通过自动化方式实现2和3矩阵的扩充
+4. 开发开源许可证冲突检测工具，以API、Web应用或在社区工具中添加此项功能的形式实现，能够生成开源许可证冲突检测报告，对冲突和兼容情况进行标识，给出数据来源的标注。
 
-#### Instructions
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
 
 #### Contribution
 
