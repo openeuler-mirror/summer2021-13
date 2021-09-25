@@ -1,8 +1,12 @@
 import pandas as pd
 
-license_info = pd.read_csv('./data/许可证信息-v1.csv', encoding='utf-8', index_col='identifier')
-compatibility_list_source = pd.read_csv('./data/兼容性_使用源代码.csv', encoding = 'utf-8', index_col = 'License')
-compatibility_list_binary = pd.read_csv('./data/兼容性_使用库.csv', encoding = 'utf-8', index_col = 'License')
+# license_info = pd.read_csv('./data/许可证信息-v1.csv', encoding='utf-8', index_col='identifier')
+# compatibility_list_source = pd.read_csv('./data/兼容性_使用源代码.csv', encoding = 'utf-8', index_col = 'License')
+# compatibility_list_binary = pd.read_csv('./data/兼容性_使用库.csv', encoding = 'utf-8', index_col = 'License')
+
+license_info = pd.read_excel('./data/许可证信息-v2.xlsx', index_col='identifier')
+compatibility_list_source = pd.read_excel('./data/相容性列表（使用源代码）.xlsx', index_col = 'License')
+compatibility_list_binary = pd.read_excel('./data/相容性列表（使用库）.xlsx', index_col = 'License')
 
 def check_process(license_start, license_end, usage):
     print(license_start, license_end, usage)
@@ -12,14 +16,14 @@ def check_process(license_start, license_end, usage):
             if check_compatibility(license_start, license_end) is True:
                 s = ''
                 if result[1] != '机器标注，非最终结果':
-                    if compatibility_list_binary.loc[license_start, license_end] != '0':
-                        s = compatibility_list_source.loc[license_start, license_end]
-                return {'result': '兼容' + s, 'remarks': result[1]}
+                    if compatibility_list_source.loc[license_start, license_end] != '相容':
+                        s = compatibility_list_source.loc[license_start, license_end].split('，')[1]
+                return {'result': '兼容 ' + s, 'remarks': result[1]}
             else:
                 return {'result': '相容，但不兼容', 'remarks': result[1]}
         else:
             return {'result': '冲突', 'remarks': result[1]}
-    if usage == 'binary':
+    if usage == 'library':
         result = has_conflict_binary(license_start, license_end)
         if result[0] is not True:
             if check_compatibility(license_start, license_end) is True:
@@ -27,7 +31,8 @@ def check_process(license_start, license_end, usage):
                 if result[1] != '机器标注，非最终结果':
                     if compatibility_list_binary.loc[license_start, license_end] != '0':
                         s = compatibility_list_binary.loc[license_start, license_end]
-                return {'result': '兼容' + s, 'remarks': result[1]}
+                        s = s.split('，')[1]
+                return {'result': '兼容，' + s, 'remarks': result[1]}
             else:
                 return {'result': '相容，但不兼容', 'remarks': result[1]}
         else:
@@ -47,8 +52,8 @@ def has_conflict_source(license_start, license_end):
         # license_info = pd.read_csv('../data/许可证信息-v1.csv', encoding='utf-8', index_col='identifier')
         sl_cate = license_info.loc[license_start, 'category']
         el_cate = license_info.loc[license_end, 'category']
-        if (sl_cate == 'Copyleft' or sl_cate == 'Weak copyleft' or sl_cate == 'Other copyleft') and \
-            (el_cate == 'Copyleft' or el_cate == 'Weak copyleft' or el_cate == 'Other copyleft'):
+        if (sl_cate == 'Copyleft' or sl_cate == 'Weak copyleft') and \
+            (el_cate == 'Copyleft' or el_cate == 'Weak copyleft'):
             return (True, '机器标注，非最终结果')
         else:
             return (False, '机器标注，非最终结果')
@@ -67,8 +72,8 @@ def has_conflict_binary(license_start, license_end):
         # license_info = pd.read_csv('../data/许可证信息-v1.csv', encoding='utf-8', index_col='identifier')
         sl_cate = license_info.loc[license_start, 'category']
         el_cate = license_info.loc[license_end, 'category']
-        if (sl_cate == 'Copyleft' or sl_cate == 'Other copyleft') and \
-                (el_cate == 'Copyleft' or el_cate == 'Weak copyleft' or el_cate == 'Other copyleft'):
+        if (sl_cate == 'Copyleft') and \
+                (el_cate == 'Copyleft' or el_cate == 'Weak copyleft'):
             return (True, '机器标注，非最终结果')
         else:
             return (False, '机器标注，非最终结果')
@@ -96,4 +101,4 @@ def check_compatibility(license_start, license_end):
 
 
 if __name__ == '__main__':
-    print(compatibility_list_source.iloc[1,1])
+    print(check_process('GPL-2.0-only', 'Apache-2.0', 'source code'))
